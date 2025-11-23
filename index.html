@@ -411,8 +411,8 @@
                 setIsSubmitting(true);
                 setError('');
 
-                // n8n webhook URL via ngrok
-                const webhookUrl = 'https://exhibition-feedback-proxy.minnan-aiycomer.workers.dev';
+                // Cloudflare Worker proxy (handles CORS)
+                const webhookUrl = 'https://exhibition-feedback-proxy.minnan-alycorner.workers.dev';
 
                 try {
                     const response = await fetch(webhookUrl, {
