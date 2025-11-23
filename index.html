@@ -411,8 +411,8 @@
                 setIsSubmitting(true);
                 setError('');
 
-                // UPDATE THIS WITH YOUR PUBLIC n8n WEBHOOK URL
-                const webhookUrl = 'YOUR_PUBLIC_N8N_WEBHOOK_URL_HERE';
+                // n8n webhook URL via ngrok
+                const webhookUrl = 'https://b696abc8fdc8.ngrok-free.app/webhook-test/exhibition-feedback';
 
                 try {
                     const response = await fetch(webhookUrl, {
